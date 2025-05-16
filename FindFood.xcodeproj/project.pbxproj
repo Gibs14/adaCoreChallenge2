@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD3A1B872DD6E6BE00CFAAF2 /* siriIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AD3A1B862DD6E6BE00CFAAF2 /* siriIntent.intentdefinition */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADB2C1772D90E3C4006383A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADB2C15E2D90E3C3006383A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADB2C1652D90E3C3006383A4;
+			remoteInfo = FindFood;
+		};
+		ADB2C1812D90E3C4006383A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADB2C15E2D90E3C3006383A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADB2C1652D90E3C3006383A4;
+			remoteInfo = FindFood;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD3A1B862DD6E6BE00CFAAF2 /* siriIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = siriIntent.intentdefinition; sourceTree = "<group>"; };
+		ADB2C1662D90E3C3006383A4 /* FindFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB2C1762D90E3C4006383A4 /* FindFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB2C1802D90E3C4006383A4 /* FindFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AD3A1B852DD6E69800CFAAF2 /* Exceptions for "FindFood" folder in "FindFood" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = ADB2C1652D90E3C3006383A4 /* FindFood */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		ADB2C1682D90E3C3006383A4 /* FindFood */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AD3A1B852DD6E69800CFAAF2 /* Exceptions for "FindFood" folder in "FindFood" target */,
+			);
+			path = FindFood;
+			sourceTree = "<group>";
+		};
+		ADB2C1792D90E3C4006383A4 /* FindFoodTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FindFoodTests;
+			sourceTree = "<group>";
+		};
+		ADB2C1832D90E3C4006383A4 /* FindFoodUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FindFoodUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADB2C1632D90E3C3006383A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB2C1732D90E3C4006383A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB2C17D2D90E3C4006383A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADB2C15D2D90E3C3006383A4 = {
+			isa = PBXGroup;
+			children = (
+				AD3A1B862DD6E6BE00CFAAF2 /* siriIntent.intentdefinition */,
+				ADB2C1682D90E3C3006383A4 /* FindFood */,
+				ADB2C1792D90E3C4006383A4 /* FindFoodTests */,
+				ADB2C1832D90E3C4006383A4 /* FindFoodUITests */,
+				ADB2C1672D90E3C3006383A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADB2C1672D90E3C3006383A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADB2C1662D90E3C3006383A4 /* FindFood.app */,
+				ADB2C1762D90E3C4006383A4 /* FindFoodTests.xctest */,
+				ADB2C1802D90E3C4006383A4 /* FindFoodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADB2C1652D90E3C3006383A4 /* FindFood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADB2C18A2D90E3C4006383A4 /* Build configuration list for PBXNativeTarget "FindFood" */;
+			buildPhases = (
+				ADB2C1622D90E3C3006383A4 /* Sources */,
+				ADB2C1632D90E3C3006383A4 /* Frameworks */,
+				ADB2C1642D90E3C3006383A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				ADB2C1682D90E3C3006383A4 /* FindFood */,
+			);
+			name = FindFood;
+			packageProductDependencies = (
+			);
+			productName = FindFood;
+			productReference = ADB2C1662D90E3C3006383A4 /* FindFood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADB2C1752D90E3C4006383A4 /* FindFoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADB2C18D2D90E3C4006383A4 /* Build configuration list for PBXNativeTarget "FindFoodTests" */;
+			buildPhases = (
+				ADB2C1722D90E3C4006383A4 /* Sources */,
+				ADB2C1732D90E3C4006383A4 /* Frameworks */,
+				ADB2C1742D90E3C4006383A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADB2C1782D90E3C4006383A4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ADB2C1792D90E3C4006383A4 /* FindFoodTests */,
+			);
+			name = FindFoodTests;
+			packageProductDependencies = (
+			);
+			productName = FindFoodTests;
+			productReference = ADB2C1762D90E3C4006383A4 /* FindFoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADB2C17F2D90E3C4006383A4 /* FindFoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADB2C1902D90E3C4006383A4 /* Build configuration list for PBXNativeTarget "FindFoodUITests" */;
+			buildPhases = (
+				ADB2C17C2D90E3C4006383A4 /* Sources */,
+				ADB2C17D2D90E3C4006383A4 /* Frameworks */,
+				ADB2C17E2D90E3C4006383A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADB2C1822D90E3C4006383A4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ADB2C1832D90E3C4006383A4 /* FindFoodUITests */,
+			);
+			name = FindFoodUITests;
+			packageProductDependencies = (
+			);
+			productName = FindFoodUITests;
+			productReference = ADB2C1802D90E3C4006383A4 /* FindFoodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADB2C15E2D90E3C3006383A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					ADB2C1652D90E3C3006383A4 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					ADB2C1752D90E3C4006383A4 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = ADB2C1652D90E3C3006383A4;
+					};
+					ADB2C17F2D90E3C4006383A4 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = ADB2C1652D90E3C3006383A4;
+					};
+				};
+			};
+			buildConfigurationList = ADB2C1612D90E3C3006383A4 /* Build configuration list for PBXProject "FindFood" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADB2C15D2D90E3C3006383A4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ADB2C1672D90E3C3006383A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADB2C1652D90E3C3006383A4 /* FindFood */,
+				ADB2C1752D90E3C4006383A4 /* FindFoodTests */,
+				ADB2C17F2D90E3C4006383A4 /* FindFoodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADB2C1642D90E3C3006383A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB2C1742D90E3C4006383A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB2C17E2D90E3C4006383A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADB2C1622D90E3C3006383A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3A1B872DD6E6BE00CFAAF2 /* siriIntent.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB2C1722D90E3C4006383A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB2C17C2D90E3C4006383A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADB2C1782D90E3C4006383A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADB2C1652D90E3C3006383A4 /* FindFood */;
+			targetProxy = ADB2C1772D90E3C4006383A4 /* PBXContainerItemProxy */;
+		};
+		ADB2C1822D90E3C4006383A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADB2C1652D90E3C3006383A4 /* FindFood */;
+			targetProxy = ADB2C1812D90E3C4006383A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ADB2C1882D90E3C4006383A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADB2C1892D90E3C4006383A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADB2C18B2D90E3C4006383A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FindFood/Preview Content\"";
+				DEVELOPMENT_TEAM = 863Q3B5CB8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindFood/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devIOS.FindFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADB2C18C2D90E3C4006383A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FindFood/Preview Content\"";
+				DEVELOPMENT_TEAM = 863Q3B5CB8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindFood/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devIOS.FindFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADB2C18E2D90E3C4006383A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devIOS.FindFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindFood.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindFood";
+			};
+			name = Debug;
+		};
+		ADB2C18F2D90E3C4006383A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devIOS.FindFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindFood.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindFood";
+			};
+			name = Release;
+		};
+		ADB2C1912D90E3C4006383A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devIOS.FindFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindFood;
+			};
+			name = Debug;
+		};
+		ADB2C1922D90E3C4006383A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devIOS.FindFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindFood;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADB2C1612D90E3C3006383A4 /* Build configuration list for PBXProject "FindFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB2C1882D90E3C4006383A4 /* Debug */,
+				ADB2C1892D90E3C4006383A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADB2C18A2D90E3C4006383A4 /* Build configuration list for PBXNativeTarget "FindFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB2C18B2D90E3C4006383A4 /* Debug */,
+				ADB2C18C2D90E3C4006383A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADB2C18D2D90E3C4006383A4 /* Build configuration list for PBXNativeTarget "FindFoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB2C18E2D90E3C4006383A4 /* Debug */,
+				ADB2C18F2D90E3C4006383A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADB2C1902D90E3C4006383A4 /* Build configuration list for PBXNativeTarget "FindFoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB2C1912D90E3C4006383A4 /* Debug */,
+				ADB2C1922D90E3C4006383A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADB2C15E2D90E3C3006383A4 /* Project object */;
+}
