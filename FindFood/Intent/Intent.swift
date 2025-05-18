@@ -19,38 +19,16 @@ struct MenuItemEntity: AppEntity {
     let englishName: String
     let tenantName: String
     let buildingName: String
-    let menuImage: String
     
     var displayRepresentation: DisplayRepresentation {
         DisplayRepresentation(
             title: "\(englishName)",
             subtitle: "\(buildingName) - \(tenantName)",
-            image: .init(systemName: menuImage)
+            image: .init(systemName: "fork.knife")
         )
     }
     
     static var defaultQuery = MenuItemQuery()
-}
-
-struct TenantItemEntity: AppEntity {
-    static var typeDisplayRepresentation: TypeDisplayRepresentation {
-        TypeDisplayRepresentation(name: "Tenant")
-    }
-    
-    let id: UUID
-    let name: String
-    let buildingName: String
-    let contact: String
-    
-    var displayRepresentation: DisplayRepresentation {
-        DisplayRepresentation(
-            title: "\(name)",
-            subtitle: "\(buildingName)",
-            image: .init(systemName: "cart")
-        )
-    }
-    
-    static var defaultQuery = TenantItemQuery()
 }
 
 // MARK: - Query Implementations
@@ -60,7 +38,7 @@ struct MenuItemQuery: EntityQuery {
             .flatMap { building in
                 building.tenants.flatMap { tenant in
                     tenant.menus.map { menu in
-                        MenuItemEntity(id: menu.id, name: menu.name, englishName: menu.englishName, tenantName: tenant.name, buildingName: building.name, menuImage: menu.ImageName)
+                        MenuItemEntity(id: menu.id, name: menu.name, englishName: menu.englishName, tenantName: tenant.name, buildingName: building.name)
                     }
                 }
             }
@@ -72,29 +50,8 @@ struct MenuItemQuery: EntityQuery {
             .flatMap { building in
                 building.tenants.flatMap { tenant in
                     tenant.menus.map { menu in
-                        MenuItemEntity(id: menu.id, name: menu.name, englishName: menu.englishName, tenantName: tenant.name, buildingName: building.name, menuImage: menu.ImageName)
+                        MenuItemEntity(id: menu.id, name: menu.name, englishName: menu.englishName, tenantName: tenant.name, buildingName: building.name)
                     }
-                }
-            }
-    }
-}
-
-struct TenantItemQuery: EntityQuery {
-    func entities(for identifiers: [UUID]) async throws -> [TenantItemEntity] {
-        ArrGOP.building
-            .flatMap { building in
-                building.tenants.compactMap { tenant in
-                    TenantItemEntity(id: tenant.id, name: tenant.name, buildingName: building.name, contact: tenant.Contact)
-                }
-            }
-            .filter { identifiers.contains($0.id) }
-    }
-    
-    func suggestedEntities() async throws -> [TenantItemEntity] {
-        ArrGOP.building
-            .flatMap { building in
-                building.tenants.compactMap { tenant in
-                    TenantItemEntity(id: tenant.id, name: tenant.name, buildingName: building.name, contact: tenant.Contact)
                 }
             }
     }
@@ -152,29 +109,6 @@ struct AskMenuIntent: AppIntent {
         }
 }
 
-struct ShowListMenuIntent: AppIntent {
-    static var title: LocalizedStringResource = "Show List Menu"
-    static var openAppWhenRun: Bool = true
-        
-        @Parameter(
-            title: "Tenant",
-            description: "Select a tenant",
-            requestValueDialog: IntentDialog("Which tenant's menu you want to see?")
-        )
-    var tenantItem: TenantItemEntity
-    
-    static var parameterSummary: some ParameterSummary {
-        Summary("Check availability for \(\.$tenantItem)")
-    }
-    
-    func perform() async throws -> some IntentResult & OpensIntent {
-            return .result(
-                dialog: "Opening \(tenantItem.name)'s menu",
-                view: TenantMenuView(tenantItem: tenantItem)
-            )
-        }
-}
-
 // MARK: - Shortcuts Provider
 struct FoodAppShortcuts: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
@@ -198,32 +132,7 @@ struct FoodAppShortcuts: AppShortcutsProvider {
                 ],
                 shortTitle: "Ask Menu",
                 systemImageName: "message.fill"
-            ),
-            AppShortcut(
-                intent: ShowListMenuIntent(),
-                phrases: [
-                    "I want to see list of menu using \(.applicationName)",
-                    "Show me list of menu using \(.applicationName)",
-                    "I want to see list of menu in \(.applicationName)",
-                    "Show me list of menu in \(.applicationName)"
-                ],
-                shortTitle: "Show List Menu",
-                systemImageName: "cart.fill"
             )
         ]
-    }
-}
-
-// MARK: - Views
-
-struct TenantMenuView: View {
-    let tenantItem: TenantItemEntity
-    
-    var body: some View {
-        TenantManager().getListMenu(
-            tenantName: tenantItem.name,
-            contact: tenantItem.contact
-        )
-        .navigationTitle(tenantItem.name)
     }
 }

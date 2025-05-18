@@ -36,35 +36,3 @@ struct WhatsAppManager {
         return true
     }
 }
-
-struct TenantManager {
-    @ViewBuilder
-    func getListMenu(tenantName: String, contact: String) -> some View {
-        switch tenantName {
-        case "Nasi Goreng Bang Ali":
-            MenuViewNasgorBangAli(tenantName: tenantName, phoneNumber: contact)
-        case "Kantin Jempol":
-            MenuViewJempol(tenantName: tenantName, phoneNumber: contact)
-        case "Zhi Lin":
-            MenuViewZhilin(tenantName: tenantName, phoneNumber: contact)
-        case "Mama Rosa":
-            MenuViewRosa(tenantName: tenantName, phoneNumber: contact)
-        case "Straw Juice":
-            StrawJuiceMenu(tenantName: tenantName, phoneNumber: contact)
-        case "Bang Chili Oil":
-            MenuViewChiliOil(tenantName: tenantName, phoneNumber: contact)
-        case "Sari Merah":
-            MenuViewSariMerah(tenantName: tenantName, phoneNumber: contact)
-        case "Kasturi":
-            MenuViewKasturi(tenantName: tenantName, phoneNumber: contact)
-        default:
-            VStack {
-                Image(systemName: "exclamationmark.triangle")
-                    .font(.largeTitle)
-                Text("Menu not available")
-                    .font(.headline)
-            }
-            .foregroundColor(.secondary)
-        }
-    }
-}
